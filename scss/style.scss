@@ -1,0 +1,407 @@
+$font-family: 'Dancing Script', cursive;
+$color:gold;
+$background-color: black;
+
+body{
+    background-color: $background-color;
+}
+header h1{
+    font-family:$font-family;
+    text-transform:initial;
+    word-spacing:2px;
+    color:$color;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+header h2{
+    font-family: $font-family;
+    text-transform:initial;
+    word-spacing:2px;
+    color:$color;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+header img{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    float: left;
+}
+.menuPrincipal{
+    background:black;
+    padding: 5px 100px;
+    display: flex;
+    border: double 4px gold;
+    border-radius: 5px;
+    justify-content:space-around;
+}
+a{
+    color:$color;
+    text-decoration: none;
+    font-size:medium;
+    font-family:Impact;
+    font-style:italic;
+    font-weight:normal;
+    line-height: 30px;
+    letter-spacing:2px;
+    display: inline-block;
+}
+a:hover{
+    background:white;
+}
+.evento{
+    display: flex;
+}
+article{
+    width: 60%;
+    flex-grow: 1;
+    display: flex;
+    align-items:center;
+}
+.menuLateral{
+    padding: 5px;
+    display: inline-block;
+}
+.primerParrafo{
+    display:flex;
+}
+.primerParrafo>p{
+    color:white;
+    padding: 20px 50px;
+    width: 100%;
+    margin: 10px;
+    border:solid 2px gold;
+    text-align: justify;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+#titulo{
+    color: gold;
+    text-align: center;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+p{
+    color: white;
+    background-image:none;
+}
+.boxSorpresa{
+    color: gold;
+
+}
+footer{
+    background-color: white;
+    padding: 1px;
+    border-style: double;
+    border-radius: 20px;
+    border-color: gold;
+}
+footer li a{
+    color:gold;
+    margin-left: 30px;
+}
+footer h5{
+    margin-left: 30px;
+    font-size: 24px;
+    margin-top:10px;
+}
+.mediosDePagos img{
+    width: 50px;
+    margin-right: 5px;
+    float:initial;
+}
+.redesSociales a{
+    float:right;
+    margin-right: 40px;
+    width: 60px;
+}
+.redesSociales a img{
+    float:right;
+    margin-right: 40px;
+    width: 60px;
+}
+.redesSociales>li>a{
+    color: gold;
+}
+h4{
+    color: white;
+}
+td{
+    color: white;
+}
+th{
+    color: white;
+}
+.elFiestero{
+    list-style-type:upper-alpha;
+}
+.alegrandoCorazones{
+    list-style: circle;
+    list-style-position:inside;
+}
+.cumpleaños>img{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 300px;
+    width: 300px;
+    background-image:none;
+    background-color:white;
+    padding: 5px;
+    border-radius: 7px;
+    background-size: cover;
+    margin:30px 20px 0px 0px;
+}
+.cumpleaños>video{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 300px;
+    width: 300px;
+    background-image:none;
+    background-color:white;
+    padding: 5px;
+    margin: 30px 20px 0px 0px;
+    border-radius: 7px;
+    background-size: cover;
+    float: right;
+}
+h2{
+    color: gold;
+    font-family:'Dancing Script', cursive;
+    font-size: 26px;
+}
+/* Nosotros */
+.inpar{
+    animation-name: inpar;
+    animation-iteration-count: 1;
+    animation-timing-function:step-start;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+@keyframes inpar {
+    0% {
+      transform:translate3d(1000px, 0px); }
+    10% {
+      transform: translate(900px, 0px); }
+    20% {
+      transform: translate(800px, 0px); }
+    30% {
+      transform: translate(700px, 0px); }
+    40% {
+      transform: translate(600px, 0px); }
+    50% {
+      transform: translate(500px, 0px); }
+    60% {
+      transform: translate(400px, 0px); }
+    70% {
+      transform: translate(300px, 0px); }
+    80% {
+      transform: translate(200px, 0px); }
+    90% {
+      transform: translate(100px, 0px); }
+    100% {
+      transform: translate(10px, 0px); } }
+.par {
+    animation-name: par;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    text-align: justify;
+    letter-spacing: 1px;
+}    
+@keyframes par {
+0% {
+    transform: translate(-1000px, 0px); }
+10% {
+    transform: translate(-900px, 0px); }
+20% {
+    transform: translate(-800px, 0px); }
+30% {
+    transform: translate(-700px, 0px); }
+40% {
+    transform: translate(-600px, 0px); }
+50% {
+    transform: translate(-500px, 0px); }
+60% {
+    transform: translate(-400px, 0px); }
+70% {
+    transform: translate(-300px, 0px); }
+80% {
+    transform: translate(-200px, 0px); }
+90% {
+    transform: translate(-100px, 0px); }
+100% {
+    transform: translate(-10px, 0px); } }
+main p{
+    color:white;
+    font-size: 16px;
+}
+@media (max-width: 800px){
+    nav{
+        flex-direction: column;
+    }
+    a{
+        margin: 10px 0;
+    }
+    .slider ul li img{
+        display: none;
+    }
+    header img{
+        float:right;
+    }
+}
+
+/* Importación de fuentes de google fonts */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+.contact_form{
+  width: 650px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+input{
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gold;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+textarea{
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gold;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+label{
+  display: block;
+  float: center;
+}
+button{
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  background-color: black;
+  border-color: gold;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+button p{
+  color: gold;
+}
+span{
+  color: red;
+}
+.aviso{
+  font-size: 13px;
+  color: #0e0e0e;
+}
+h1{
+  font-size: 39px;
+  text-align:center;
+  padding-bottom: 20px;
+  color: black;
+}
+h3{
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+p{
+  font-size: 14px;
+  color: #0e0e0e;
+}
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+.formulario input:focus{
+  outline:0;
+  border: 1px solid red;
+}
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid red;
+}
+/* productos */
+.productos{
+  display: grid;
+  grid-template-rows: 50%;
+  grid-template-columns: 25% 25% 25%;
+  grid-column-gap: 0%;
+  justify-content: space-around;
+  align-items: stretch; 
+}
+.productos img{ 
+    width: 450px;
+    height: 450px;
+    border: 10px solid white;
+    background-size: cover;
+    background-position: center;
+    animation: border-transform 10s linear alternate infinite forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+    box-shadow: 0 15px 30px 0 gold;
+    transform: scale(0.7);
+      -webkit-animation-play-state: running;
+      -moz-animation-play-state: running;
+      animation-play-state: running;
+}
+.productos video{
+    width: 450px;
+    height: 450px;
+    border: 10px solid white;
+    background-size: cover;
+    background-position: center;
+    animation: border-transform 10s linear alternate infinite forwards;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    animation-play-state: paused;
+    box-shadow: 0 15px 30px 0 gold;
+    transform: scale(0.7);
+      -webkit-animation-play-state: running;
+      -moz-animation-play-state: running;
+      animation-play-state: running;
+}
+@keyframes border-transform{
+    0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; }
+    14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; }
+    28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; }
+    42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; }
+    56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; }
+    70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; }
+    84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; }
+}
