@@ -19,74 +19,47 @@ body {
   letter-spacing: 1px;
   font-size: 18px;
 }
-
-/* productos */
-.productos {
-  display: grid;
-  grid-template-rows: 50%;
-  grid-template-columns: 25% 25% 25%;
-  grid-column-gap: 0%;
-  justify-content: space-around;
-  align-items: stretch;
+/* PRODUCTOS */
+.container{
+  display:grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 500px 500px;
+}
+#container {
+	width: auto;
+	max-width: 400px;
+	height: auto;
+	margin: 5em auto;
+	overflow: hidden;
+	border: 10px solid #EEE5E5;
+	outline: 5px dashed #f1f508c4;
+	position: relative;
+}
+#container img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: -5px;
+	transition: all 0.3s ease-out;
+	position: relative;
+	z-index: 2;
+}
+#container:hover img {
+	transform: scale(1.2, 1.2);
+	z-index: 9;
+}
+#container video {
+	width: 100%;
+	height: 100%;
+	margin-bottom: -5px;
+	transition: all 0.3s ease-out;
+	position: relative;
+	z-index: 2;
+}
+#container:hover video {
+	transform: scale(1.2, 1.2);
+	z-index: 9;
 }
 
-.productos img {
-  width: 450px;
-  height: 450px;
-  border: 10px solid white;
-  background-size: cover;
-  background-position: center;
-  animation: border-transform 10s linear alternate infinite forwards;
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  animation-play-state: paused;
-  box-shadow: 0 15px 30px 0 gold;
-  transform: scale(0.7);
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  animation-play-state: running;
-}
-
-.productos video {
-  width: 450px;
-  height: 450px;
-  border: 10px solid white;
-  background-size: cover;
-  background-position: center;
-  animation: border-transform 10s linear alternate infinite forwards;
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  animation-play-state: paused;
-  box-shadow: 0 15px 30px 0 gold;
-  transform: scale(0.7);
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  animation-play-state: running;
-}
-
-@keyframes border-transform {
-  0%, 100% {
-    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
-  }
-  14% {
-    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
-  }
-  28% {
-    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
-  }
-  42% {
-    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
-  }
-  56% {
-    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
-  }
-  70% {
-    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
-  }
-  84% {
-    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
-  }
-}
 
 header h1 {
   font-family: "Dancing Script", cursive;
@@ -194,23 +167,6 @@ footer h5 {
   margin-right: 5px;
   float: initial;
 }
-
-.redesSociales a {
-  float: right;
-  margin-right: 40px;
-  width: 60px;
-}
-
-.redesSociales a img {
-  float: right;
-  margin-right: 40px;
-  width: 60px;
-}
-
-.redesSociales > li > a {
-  color: gold;
-}
-
 h4 {
   color: white;
 }
@@ -370,7 +326,7 @@ main p {
     float: right;
   }
 }
-/* Importación de fuentes de google fonts */
+/* Contacto */
 .contact_form {
   width: 650px;
   height: auto;
@@ -499,4 +455,45 @@ p {
   font-size: 15px;
   text-align: justify;
   color: gold;
+}
+/* Barra Redes Sociales */
+.social-bar{
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  z-index: 100;
+}
+
+.icon{
+  color:white;
+  text-decoration: none;
+  padding: 1rem;
+  display: flex;
+  transition:all .5s;
+}
+
+.icon-facebook {
+  background: blue;
+}
+.icon-instagram{
+  background:rgb(201, 26, 19);
+}
+.icon-whatsapp{
+  background:rgb(12, 139, 55);
+}
+.icon:first-child{
+  border-radius: 1rem 0 0 0;
+}
+
+icon:last-child{
+  border-radius: 0 0 0 1rem;
+}
+.icon:hover{
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.60);
 }
