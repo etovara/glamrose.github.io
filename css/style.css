@@ -63,12 +63,17 @@ body {
 @media (max-width: 600px) {
 .container{
   display:grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: 500px;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 300px;
+  margin-top: 20px;
+  }
+
+#container {
+  margin: 5px;
+  border: 3px solid #ffffff;
+	outline: none;
   }
 }
-
-
 header h1 {
   font-family: "Dancing Script", cursive;
   text-transform: initial;
