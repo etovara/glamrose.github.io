@@ -143,3 +143,9 @@ html::before,
                 63vw 59vh .1vmin rgba(200,255,230,.7),
                 48vw 28vh .1vmin rgba(200,255,230,.7);
   }
+
+@media (max-width: 450px) {
+.logo{
+  width: 300px;
+}
+}
