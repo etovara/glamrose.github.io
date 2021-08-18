@@ -60,6 +60,14 @@ body {
 	z-index: 9;
 }
 
+@media (max-width: 600px) {
+.container{
+  display:grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 500px;
+  }
+}
+
 
 header h1 {
   font-family: "Dancing Script", cursive;
