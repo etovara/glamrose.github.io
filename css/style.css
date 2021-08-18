@@ -207,13 +207,14 @@ th {
   float: right;
 }
 
+/* Nosotros */
 h2 {
   color: gold;
   font-family: "Dancing Script", cursive;
   font-size: 26px;
+  display: flex;
 }
 
-/* Nosotros */
 .inpar {
   animation-name: inpar;
   animation-iteration-count: 1;
@@ -222,6 +223,7 @@ h2 {
   animation-delay: 0s;
   text-align: justify;
   letter-spacing: 1px;
+  display: flex;
 }
 
 @keyframes inpar {
