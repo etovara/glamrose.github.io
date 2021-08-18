@@ -338,19 +338,6 @@ main p {
   padding-left: 30px;
 }
 
-@media (max-width: 450px) {
-.contact_form{
-  width: 350px;
-  height: auto;
-  margin: 30px auto;
-  border-radius: 10px;
-  padding-top: 15px;
-  padding-bottom: 20px;
-  background-color: #fbfbfb;
-  padding-left: 15px;
-  }
-}
-
 input {
   background-color: #fbfbfb;
   width: 408px;
@@ -445,6 +432,25 @@ p {
 .formulario textarea:focus {
   outline: 0;
   border: 1px solid red;
+}
+
+@media (max-width: 450px) {
+.contact_form{
+  width: 350px;
+  padding-top: 15px;
+  padding-left: 15px;
+  }
+input {
+  width: 300px;
+  height: 40px;
+}
+textarea {
+  width: 300px;
+}
+button {
+  height: 45px;
+  width: 300px;
+}
 }
 
 
