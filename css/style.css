@@ -309,7 +309,7 @@ main p {
   font-size: 16px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 450px) {
   nav {
     flex-direction: column;
   }
@@ -336,6 +336,19 @@ main p {
   padding-bottom: 20px;
   background-color: #fbfbfb;
   padding-left: 30px;
+}
+
+@media (max-width: 450px) {
+.contact_form{
+  width: 350px;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: #0d9ef1bd;
+  padding-left: 15px;
+  }
 }
 
 input {
@@ -433,6 +446,8 @@ p {
   outline: 0;
   border: 1px solid red;
 }
+
+
 /* Pagina404 */
 .error404 h1 {
   font-family: "Dancing Script", cursive;
