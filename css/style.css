@@ -9,28 +9,68 @@ body {
 }
 .primerParrafo > p {
   color: white;
-  padding: 20px 50px;
+  padding: 20px 200px;
   width: 100%;
   margin: 10px;
-  border: solid 2px gold;
-  text-align: justify;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-align: center;
+  font-family: "Montserrat";
   letter-spacing: 1px;
   font-size: 18px;
 }
-
+.segundoParrafo{
+  display: block;
+  padding: 10px 200px 0px 20px;
+}
+.segundoParrafo h2 {
+  color: gold;
+  display: block;
+  text-align: center;
+  font-size: 2.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;  
+  text-transform: uppercase;
+}
+.segundoParrafo h3{
+  color: gold;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+}
+.segundoParrafo p{
+  color:white;
+  font-size: 16px;
+  display: flex;
+  text-align:left;
+}
 @media (max-width: 800px) {
 .primerParrafo{
   display: inline-block;
   padding: 5px;
 }
 .primerParrafo > p {
-  font-size: 12px;
+  font-size: 14px;
   padding: 10px;
+}
+.segundoParrafo{
+  display: inline-block;
+  padding: 5px;
+}
+.segundoParrafo h2 {
+  font-size: 2em;
+  padding: 10px;
+}
+.segundoParrafo h3 {
+  font-size: 16px;
+  padding: 10px;
+}
+.segundoParrafo p {
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
 }
 }
 /* PRODUCTOS */
-.container{
+/* .container{
   display:grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 500px 500px;
@@ -92,8 +132,151 @@ body {
   width: 300px;
   height: 300px;
   transition: all 0.6s ease-out;
+} */
+
+/* DESING */
+* {
+font-family: arial;
+}
+.contenedor {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.3s ease-out;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.contenedor-cards .contenedor-card-item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width: 30%;
+    margin: 1%;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-radius: 8px;
+}
+.contenedor-cards .contenedor-card-item:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.contenedor-card-item-wrapper {
+    overflow: hidden;
+    position: relative !important;
+    background: #3E2723;
+    border-radius: 5px;
+}
+.contenedor-card-item img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 5px;
+}
+.contenedor-card-item .contenedor-info {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: -70px;
+    -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.contenedor-card-item .contenedor-info .fondo {
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.73) 53%, rgba(0,0,0,0.88) 100%);
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.73) 53%,rgba(0,0,0,0.88) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.73) 53%,rgba(0,0,0,0.88) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e0000000',GradientType=0 );
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contenedor-card-item .contenedor-info .info {
+    color: #fff;
+    position: relative;
+    z-index: 500;
+    padding: 20px 15px;
+}
+.contenedor-card-item .contenedor-info .info .titulo {
+  margin: 0;
+  font-size: 20px;
+  color:gold;
+}
+.contenedor-card-item .contenedor-info .info .categoria {
+  display: block;
+  font-size: 10px;
+  color: gold;
+}
+.contenedor-card-item:hover .contenedor-info {
+    bottom: 0;
+}
+.contenedor-card-item:hover img {
+    top: -30px;
+    -webkit-transform: rotate(-5deg) scale(2);
+    -ms-transform: rotate(-5deg) scale(2);
+    -o-transform: rotate(-5deg) scale(2);
+    transform: rotate(-5deg) scale(2);
+}
+
+@media screen and (max-width: 900px) {
+.contenedor-card-item:hover img {
+  top: -30px;
+  -webkit-transform: rotate(-5deg) scale(1.3);
+  -ms-transform: rotate(-5deg) scale(1.3);
+  -o-transform: rotate(-5deg) scale(1.3);
+  transform: rotate(-5deg) scale(1.3);
+}
+.contenedor-card-item .contenedor-info {
+  bottom: 0;
 }
 }
+
+@media screen and (max-width: 767px) {
+.contenedor {
+  width: 95%;
+}
+
+.contenedor-cards .contenedor-card-item {
+  width: 48%;
+  margin: 1%;
+}
+}
+
+@media screen and (max-width: 550px) {
+.contenedor-cards .contenedor-card-item {
+  width: 60%;
+  margin: 10px auto;
+}
+}
+
+@media screen and (max-width: 480px) {
+.contenedor {
+  width: 90%;
+}
+.contenedor-cards .contenedor-card-item {
+  width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+.contenedor {
+  width: 100%;
+  }
+  }
+}
+
 header h1 {
   font-family: "Dancing Script", cursive;
   text-transform: initial;
@@ -193,13 +376,41 @@ footer h5 {
   margin-left: 30px;
   font-size: 24px;
   margin-top: 10px;
+  display: block;
+  text-align:right;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
 }
 
 .mediosDePagos img {
-  width: 50px;
+  width: 40px;
   margin-right: 5px;
-  float: initial;
+  float:right;
 }
+.footer p {
+  display: block;
+  text-align: center;
+  font-size: 0.90em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+@media (max-width: 600px){
+  footer h5 {
+    display: block;
+    text-align:right;
+  }
+  .mediosDePagos img {
+    display:flex;
+    text-align:center;
+  }
+  .footer p {
+    display: flex;
+    text-align: left;
+    font-size: 0.90em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+  }
+  }
 h4 {
   color: white;
 }
@@ -211,6 +422,7 @@ td {
 th {
   color: white;
 }
+
 .cumpleaños > img {
   display: inline-block;
   flex-direction: row;
